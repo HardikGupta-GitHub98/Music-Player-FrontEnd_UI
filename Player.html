@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<!-- TO ADD TRANSITION ON LOADING OF THE WEBPAGE USING ANIMATE.CSS -->
+<html class="animated zoomInUp">
+	<head>
+		<!-- LINKING THE CSS STYLESHEET -->
+		<link rel="stylesheet" type="text/css" href="player.css" />
+
+		<!-- LINKING STYLE SHEET FOR MUSIC CONTROLLER -->
+		<link rel="stylesheet" type="text/css" href="Styless.css" />
+
+		<!-- ADDING ANIMATE.CSS CDN -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
+		/>
+		<title>Music Player</title>
+		<!-- ADDING ICONS CDN -->
+		<script
+			src="https://kit.fontawesome.com/0baf93e608.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body id="firstpage">
+		<!-- Header Of the Page ////////////////////////////////////////////////-->
+
+		<header id="header-1">
+			<div id="header-left">
+				<div>
+					<img
+						class="header-img-left"
+						src="Images/Categories/hiclipart.com.png"
+					/>
+				</div>
+			</div>
+			<div id="header-right">
+				<div id="search-bar">
+					<i class="fas fa-search"></i>
+					<input type="text" placeholder="Search" />
+				</div>
+				<div id="bell-icon">
+					<i class="fas fa-bell"></i>
+				</div>
+				<div id="right-image">
+					<img
+						class="header-img-left"
+						src="Images/pngkey.com-shakira-png-8429585.png"
+					/>
+				</div>
+			</div>
+		</header>
+
+		<!-- ///////////////////////////////////////////////////////////////////////////////////////////// -->
+		<!-- //////////////////////////////////////////////////////////////////////////////////////////// -->
+
+		<!-- Section For Rest Of THE Page -->
+		<section id="content">
+			<!-- The central portion whic is left to the queue  -->
+			<div id="central">
+				<!-- Animated Top Card  -->
+				<div id="top-cards">
+					<div class="img-resize">
+						<a href="#container"><img src="Images/TOPCARD1.png" /></a>
+					</div>
+					<div class="img-resize">
+						<a href="#container"><img src="Images/TOPCARD2.jpg" /></a>
+					</div>
+					<div class="img-resize">
+						<a href="#container"><img src="Images/TOPCARD3.jpg" /></a>
+					</div>
+				</div>
+				<!-- /////////////////////////////////////////////////////// -->
+				<!-- End Of the Top Cards -->
+
+				<!-- Latest Release Section -->
+				<div id="latest-release">
+					<h2>Latest Release</h2>
+
+					<div id="All-releases">
+						<!--/// Code For Single Latest Release Release/////////////////////////////////////-->
+						<div class="single-release">
+							<div class="Image-container">
+								<div class="Inside-image">
+									<a href="#container"><img src="Images/Camila.jpg" /></a>
+								</div>
+								<div class="release-info">
+									<h3>Camila Cabello</h3>
+									<p>May 20</p>
+								</div>
+							</div>
+							<div id="menu-and-time">
+								<i
+									onclick="myFunction1()"
+									class="fas fa-ellipsis-h dropbtn"
+									style="color: white;"
+								>
+								</i>
+							</div>
+							<div style="position: relative;">
+								<div id="myDropdown1" class="dropdown-content">
+									<a href="#container"
+										><i class="fas fa-play"></i>&nbsp Play Now</a
+									>
+									<a href="#"><i class="fas fa-plus"></i>&nbsp Add To Queue</a>
+									<a href="#"
+										><i class="fas fa-info-circle"></i>&nbsp Get Info</a
+									>
+									<a href="#"
+										><i class="fas fa-heart"></i>&nbsp Add To Favourites</a
+									>
+								</div>
+							</div>
+						</div>
+						<!-- ///////////////////////////////////////////////////////////////////////////////////////////////// -->
+						<div class="single-release">
+							<div class="Image-container">
+								<div class="Inside-image">
+									<a href="#container"><img src="Images/Camila.jpg" /></a>
+								</div>
+								<div class="release-info">
+									<h3>Camila Cabello</h3>
+									<p>May 20</p>
+								</div>
+							</div>
+							<div id="menu-and-time">
+								<i
+									onclick="myFunction2()"
+									class="fas fa-ellipsis-h dropbtn"
+									style="color: white;"
+								>
+								</i>
+							</div>
+							<div style="position: relative;">
+								<div id="myDropdown2" class="dropdown-content">
+									<a href="#container"
+										><i class="fas fa-play"></i>&nbsp Play Now</a
+									>
+									<a href="#"><i class="fas fa-plus"></i>&nbsp Add To Queue</a>
+									<a href="#"
+										><i class="fas fa-info-circle"></i>&nbsp Get Info</a
+									>
+									<a href="#"
+										><i class="fas fa-heart"></i>&nbsp Add To Favourites</a
+									>
+								</div>
+							</div>
+						</div>
+						<div class="single-release">
+							<div class="Image-container">
+								<div class="Inside-image">
+									<a href="#container"><img src="Images/Camila.jpg" /></a>
+								</div>
+								<div class="release-info">
+									<h3>Camila Cabello</h3>
+									<p>May 20</p>
+								</div>
+							</div>
+							<div id="menu-and-time">
+								<i
+									onclick="myFunction3()"
+									class="fas fa-ellipsis-h dropbtn"
+									style="color: white;"
+								>
+								</i>
+							</div>
+							<div style="position: relative;">
+								<div id="myDropdown3" class="dropdown-content">
+									<a href="#container"
+										><i class="fas fa-play"></i>&nbsp Play Now</a
+									>
+									<a href="#"><i class="fas fa-plus"></i>&nbsp Add To Queue</a>
+									<a href="#"
+										><i class="fas fa-info-circle"></i>&nbsp Get Info</a
+									>
+									<a href="#"
+										><i class="fas fa-heart"></i>&nbsp Add To Favourites</a
+									>
+								</div>
+							</div>
+						</div>
+						<div class="single-release">
+							<div class="Image-container">
+								<div class="Inside-image">
+									<a href="#container"><img src="Images/Camila.jpg" /></a>
+								</div>
+								<div class="release-info">
+									<h3>Camila Cabello</h3>
+									<p>May 20</p>
+								</div>
+							</div>
+							<div id="menu-and-time">
+								<i
+									onclick="myFunction4()"
+									class="fas fa-ellipsis-h dropbtn"
+									style="color: white;"
+								>
+								</i>
+							</div>
+							<div style="position: relative;">
+								<div id="myDropdown4" class="dropdown-content">
+									<a href="#container"
+										><i class="fas fa-play"></i>&nbsp Play Now</a
+									>
+									<a href="#"><i class="fas fa-plus"></i>&nbsp Add To Queue</a>
+									<a href="#"
+										><i class="fas fa-info-circle"></i>&nbsp Get Info</a
+									>
+									<a href="#"
+										><i class="fas fa-heart"></i>&nbsp Add To Favourites</a
+									>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+				<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+				<!-- //////////////////// Popular Artists Section //////////////////////////////////////////// -->
+				<div id="popular-artists">
+					<h2>Popular Artists</h2>
+					<div class="artist-info">
+						<div class="individual-artist">
+							<a href="PlayerPage2.html">
+								<div>
+									<img src="Images/Arijit.jpg" class="artist-image"/ >
+								</div>
+							</a>
+							<p>Arijit Singh</p>
+						</div>
+						<div class="individual-artist">
+							<a href="PlayerPage2.html">
+								<div>
+									<img src="Images/Ananya.jpg" class="artist-image"/ >
+								</div>
+							</a>
+							<p>Ananya Birla</p>
+						</div>
+						<div class="individual-artist">
+							<a href="PlayerPage2.html">
+								<div>
+									<img src="Images/jubinnaut.jpeg" class="artist-image"/ >
+								</div>
+							</a>
+							<p>Jubin Nautiyal</p>
+						</div>
+						<div class="individual-artist">
+							<a href="PlayerPage2.html">
+								<div>
+									<img src="Images/Rihanna.jpg" class="artist-image"/ >
+								</div>
+							</a>
+							<p>Rihanna</p>
+						</div>
+						<div class="individual-artist">
+							<a href="PlayerPage2.html">
+								<div>
+									<img src="Images/MartinGarrix.jpg" class="artist-image"/ >
+								</div>
+							</a>
+							<p>Martin Garrix</p>
+						</div>
+						<div class="individual-artist">
+							<a href="PlayerPage2.html">
+								<div>
+									<img src="Images/Shakira.jpg" class="artist-image"/ >
+								</div>
+							</a>
+							<p>Shakira</p>
+						</div>
+					</div>
+				</div>
+				<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+				<!-- /////////CATEGORIES///////////////////////////////////////////////////////// -->
+				<div id="Categories">
+					<h2>Categories</h2>
+					<div class="category-options">
+						<div class="category-image">
+							<div class="category-info">
+								<p>Romance</p>
+							</div>
+							<a href="PlayerPage2.html"
+								><img src="Images/Categories/Love.jpg"
+							/></a>
+						</div>
+						<div class="category-image">
+							<div class="category-info">
+								<p>CHILL</p>
+							</div>
+							<a href="PlayerPage2.html"
+								><img src="Images/Categories/Chill.jpg"
+							/></a>
+						</div>
+						<div class="category-image">
+							<div class="category-info">
+								<p>POP</p>
+							</div>
+							<a href="PlayerPage2.html"
+								><img src="Images/Categories/pop.jpg"
+							/></a>
+						</div>
+						<div class="category-image">
+							<div class="category-info">
+								<p>RETRO</p>
+							</div>
+							<a href="PlayerPage2.html"
+								><img src="Images/Categories/Retro.png"
+							/></a>
+						</div>
+						<div class="category-image">
+							<div class="category-info">
+								<p>ROCK</p>
+							</div>
+							<a href="PlayerPage2.html"
+								><img src="Images/Categories/Rock.jpg"
+							/></a>
+						</div>
+						<div class="category-image">
+							<div class="category-info">
+								<p style="color: rgb(226, 153, 43);">WORKOUT</p>
+							</div>
+							<a href="PlayerPage2.html"
+								><img src="Images/Categories/Workout.jpg"
+							/></a>
+						</div>
+					</div>
+				</div>
+				<div id="hoverable-categories">
+					<div class="hoverable">
+						<div class="category-info">
+							<p>RAP</p>
+						</div>
+						<a href="PlayerPage2.html"><img src="Images/Rap.jpg" /></a>
+					</div>
+					<div class="hoverable">
+						<div class="category-info">
+							<p>ROCK</p>
+						</div>
+						<a href="PlayerPage2.html"><img src="Images/Rock.jpg" /></a>
+					</div>
+					<div class="hoverable">
+						<div class="category-info">
+							<p>Romance</p>
+						</div>
+						<a href="PlayerPage2.html"><img src="Images/Romance.jpg" /></a>
+					</div>
+					<div class="hoverable">
+						<div class="category-info">
+							<p>Bhangra</p>
+						</div>
+						<a href="PlayerPage2.html"><img src="Images/Bhangra.jpg" /></a>
+					</div>
+				</div>
+				<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+				<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+				<div id="language-english">
+					<h2>Latest-English</h2>
+					<div class="latest-track">
+						<div class="track-info">
+							<a href="#container"><img src="Images/Camila2.jpg" /></a>
+							<div><p>Track Name</p></div>
+						</div>
+						<div class="track-info">
+							<a href="#container"
+								><img src="Images/pngkey.com-shakira-png-8429585.png"
+							/></a>
+							<div><p>Track Name</p></div>
+						</div>
+						<div class="track-info">
+							<a href="#container"><img src="Images/Rihanna.jpg" /></a>
+							<div><p>Track Name</p></div>
+						</div>
+						<div class="track-info">
+							<a href="#container"><img src="Images/TOPCARD3.jpg" /></a>
+							<div><p>Track Name</p></div>
+						</div>
+						<div class="track-info">
+							<a href="#container"><img src="Images/DavidGueta.png" /></a>
+							<div><p>Track Name</p></div>
+						</div>
+					</div>
+				</div>
+				<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+				<!-- //////////////////////////HINDI /////////////////////////////////////////////////-->
+				<div id="language-english">
+					<h2>Latest-Hindi</h2>
+					<div class="latest-track">
+						<div class="track-info">
+							<a href="#container"><img src="Images/jubinnaut.jpeg" /></a>
+							<div><p>Track Name</p></div>
+						</div>
+						<div class="track-info">
+							<a href="#container"><img src="Images/AtifAslam.jpg" /></a>
+							<div><p>Track Name</p></div>
+						</div>
+						<div class="track-info">
+							<a href="#container"><img src="Images/Ananya.jpg" /></a>
+							<div><p>Track Name</p></div>
+						</div>
+						<div class="track-info">
+							<a href="#container"><img src="Images/TOPCARD1.png" /></a>
+							<div><p>Track Name</p></div>
+						</div>
+						<div class="track-info">
+							<a href="#container"
+								><img src="Images/Page2/HoneySingh2.jpg"
+							/></a>
+							<div><p>Track Name</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ///////////////////////////////////////////////////////////////////////////////////// -->
+			<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+			<!-- /////////////////////////////////Start Of Queue Section//////////////////////////// -->
+
+			<!-- ///////////////////QUEUE HEADER////////////////////////////////////////////////////////////// -->
+			<div id="queue">
+				<div id="queue-header">
+					<h2>Queue</h2>
+					<form action="/action_page.php">
+						<select name="PlayLists" id="Drop">
+							<option value="Queue">Queue</option>
+							<option value="PlayLists">Playlists</option>
+							<option value="Favourite Songs">Favourite Songs</option>
+						</select>
+					</form>
+				</div>
+				<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+				<!-- ///////////////Queue Start/////////////////////////////////////////////////////////// -->
+				<div id="queue-items">
+					<!-- Single Queue Entity Enclosed Within ANCHOR tag  -->
+					<a href="#container"
+						><div class="single-item">
+							<div class="item-left">
+								<div class="song-No">
+									<p>01</p>
+								</div>
+								<div class="item-image">
+									<img src="Images/list.jpg" />
+								</div>
+								<div class="item-details">
+									<h3 style="margin: 0px 0px;">Song</h3>
+									<p style="margin: 2px 0px;">Album</p>
+								</div>
+							</div>
+							<div class="item-right">
+								<i class="far fa-heart"></i>
+							</div></div
+					></a>
+					<!-- //////////////////////////////////////////////////////////// -->
+					<a href="#container"
+						><div class="single-item">
+							<div class="item-left">
+								<div class="song-No">
+									<p>02</p>
+								</div>
+								<div class="item-image">
+									<img src="Images/jubinnaut.jpeg" />
+								</div>
+								<div class="item-details">
+									<h3 style="margin: 0px 0px;">Song</h3>
+									<p style="margin: 2px 0px;">Album</p>
+								</div>
+							</div>
+							<div class="item-right">
+								<i class="far fa-heart"></i>
+							</div></div
+					></a>
+					<a href="#container"
+						><div class="single-item">
+							<div class="item-left">
+								<div class="song-No">
+									<p>03</p>
+								</div>
+								<div class="item-image">
+									<img src="Images/list.jpg" />
+								</div>
+								<div class="item-details">
+									<h3 style="margin: 0px 0px;">Song</h3>
+									<p style="margin: 2px 0px;">Album</p>
+								</div>
+							</div>
+							<div class="item-right">
+								<i class="far fa-heart"></i>
+							</div></div
+					></a>
+					<a href="#container"
+						><div class="single-item">
+							<div class="item-left">
+								<div class="song-No">
+									<p>04</p>
+								</div>
+								<div class="item-image">
+									<img src="Images/jubinnaut.jpeg" />
+								</div>
+								<div class="item-details">
+									<h3 style="margin: 0px 0px;">Song</h3>
+									<p style="margin: 2px 0px;">Album</p>
+								</div>
+							</div>
+							<div class="item-right">
+								<i class="far fa-heart"></i>
+							</div></div
+					></a>
+					<a href="#container"
+						><div class="single-item">
+							<div class="item-left">
+								<div class="song-No">
+									<p>01</p>
+								</div>
+								<div class="item-image">
+									<img src="Images/list.jpg" />
+								</div>
+								<div class="item-details">
+									<h3 style="margin: 0px 0px;">Song</h3>
+									<p style="margin: 2px 0px;">Album</p>
+								</div>
+							</div>
+							<div class="item-right">
+								<i class="far fa-heart"></i>
+							</div></div
+					></a>
+					<a href="#container"
+						><div class="single-item">
+							<div class="item-left">
+								<div class="song-No">
+									<p>01</p>
+								</div>
+								<div class="item-image">
+									<img src="Images/list.jpg" />
+								</div>
+								<div class="item-details">
+									<h3 style="margin: 0px 0px;">Song</h3>
+									<p style="margin: 2px 0px;">Album</p>
+								</div>
+							</div>
+							<div class="item-right">
+								<i class="far fa-heart"></i>
+							</div></div
+					></a>
+					<a href="#container"
+						><div class="single-item">
+							<div class="item-left">
+								<div class="song-No">
+									<p>01</p>
+								</div>
+								<div class="item-image">
+									<img src="Images/list.jpg" />
+								</div>
+								<div class="item-details">
+									<h3 style="margin: 0px 0px;">Song</h3>
+									<p style="margin: 2px 0px;">Album</p>
+								</div>
+							</div>
+							<div class="item-right">
+								<i class="far fa-heart"></i>
+							</div></div
+					></a>
+					<a href="#container"
+						><div class="single-item">
+							<div class="item-left">
+								<div class="song-No">
+									<p>01</p>
+								</div>
+								<div class="item-image">
+									<img src="Images/list.jpg" />
+								</div>
+								<div class="item-details">
+									<h3 style="margin: 0px 0px;">Song</h3>
+									<p style="margin: 2px 0px;">Album</p>
+								</div>
+							</div>
+							<div class="item-right">
+								<i class="far fa-heart"></i>
+							</div></div
+					></a>
+					<a href="#container"
+						><div class="single-item">
+							<div class="item-left">
+								<div class="song-No">
+									<p>01</p>
+								</div>
+								<div class="item-image">
+									<img src="Images/list.jpg" />
+								</div>
+								<div class="item-details">
+									<h3 style="margin: 0px 0px;">Song</h3>
+									<p style="margin: 2px 0px;">Album</p>
+								</div>
+							</div>
+							<div class="item-right">
+								<i class="far fa-heart"></i>
+							</div></div
+					></a>
+					<a href="#container"
+						><div class="single-item">
+							<div class="item-left">
+								<div class="song-No">
+									<p>01</p>
+								</div>
+								<div class="item-image">
+									<img src="Images/list.jpg" />
+								</div>
+								<div class="item-details">
+									<h3 style="margin: 0px 0px;">Song</h3>
+									<p style="margin: 2px 0px;">Album</p>
+								</div>
+							</div>
+							<div class="item-right">
+								<i class="far fa-heart"></i>
+							</div></div
+					></a>
+					<a href="#container"
+						><div class="single-item">
+							<div class="item-left">
+								<div class="song-No">
+									<p>01</p>
+								</div>
+								<div class="item-image">
+									<img src="Images/list.jpg" />
+								</div>
+								<div class="item-details">
+									<h3 style="margin: 0px 0px;">Song</h3>
+									<p style="margin: 2px 0px;">Album</p>
+								</div>
+							</div>
+							<div class="item-right">
+								<i class="far fa-heart"></i>
+							</div></div
+					></a>
+					<a href="#container"
+						><div class="single-item">
+							<div class="item-left">
+								<div class="song-No">
+									<p>01</p>
+								</div>
+								<div class="item-image">
+									<img src="Images/list.jpg" />
+								</div>
+								<div class="item-details">
+									<h3 style="margin: 0px 0px;">Song</h3>
+									<p style="margin: 2px 0px;">Album</p>
+								</div>
+							</div>
+							<div class="item-right">
+								<i class="far fa-heart"></i>
+							</div></div
+					></a>
+				</div>
+			</div>
+		</section>
+		<!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+		<!-- ///////////////////MUSIC CONTROLLER BAR//////////////////////////////////////////// -->
+		<div id="container">
+			<main>
+				<div class="album-art">
+					<img src="Images/Page2/HoneySingh2.jpg" alt="" />
+				</div>
+				<footer>
+					<div class="title">International Villagers - Gabru</div>
+					<div class="time-tracker">
+						<div class="timer">
+							<div class="bg"></div>
+						</div>
+						<div class="time">02:80</div>
+					</div>
+				</footer>
+				<div class="player">
+					<i class="fa fa-repeat"></i>
+					<i class="fa fa-fast-backward"></i>
+					<i class="fa fa-play"></i>
+					<i class="fa fa-fast-forward"></i>
+					<i class="fa fa-random"></i>
+				</div>
+			</main>
+		</div>
+		<!-- //////////// ///////////////////////////////////////////////////////////////////////////////////////// -->
+
+		<script src="script.js"></script>
+	</body>
+</html>

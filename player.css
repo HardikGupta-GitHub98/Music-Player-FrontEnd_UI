@@ -1,0 +1,435 @@
+html {
+	width: 100%;
+}
+
+/* TO SET BACKGROUND COLOR OF THE BODY AND SET THE FONT FAMILY ANS TEXT COLOR  */
+body {
+	background-image: url("Images/darkbg1.jpg");
+	overflow-x: hidden;
+	margin: 0px 0px;
+	padding: 0px 0px;
+	width: 100%;
+
+	color: ivory;
+
+	font-family: Lato, Lucida Grande, Lucida Sans Unicode, Tahoma, Sans-Serif;
+}
+
+/* STYLING OF ANCHOR TAG TO LOOK THE SAME AS NORMAL TEXT OF THE WHOLE PAGE */
+a {
+	color: ivory;
+	text-decoration: none;
+	font-family: Lato, Lucida Grande, Lucida Sans Unicode, Tahoma, Sans-Serif;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+	display: none;
+}
+
+/* MAIN HEADER OF THE PAGE 
+THE HEIGHT IS HARD CODED*/
+#header-1 {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	margin: 10px 75px;
+	height: 60px;
+	margin-bottom: 10px;
+}
+/* LEFT PORTION OF HEADER
+IT INCLUDES THE LEFT IMAGE  */
+#header-left {
+	width: 50%;
+}
+/* RIGHT PORTION OF THE HEADER
+INCLUDES THE SEARCH BAR, NOTIFICATION BELL AS WELL AS RIGHT END IMAGE */
+#header-right {
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	width: 40%;
+	height: 100%;
+	align-items: center;
+}
+/* SEARCH BAR */
+#header-right input {
+	padding: 10px 40px;
+	background-color: rgb(18, 25, 62);
+	color: ivory;
+	border: none;
+	border-radius: 5%/45%;
+	outline: none;
+}
+/* STYLING OF ICON TAG */
+#header-right i {
+	color: ivory;
+
+	padding-top: 5px;
+	left: 30px;
+	position: relative;
+}
+
+/* SIZE AND POSITION ADJUSTMENT OF RIGHT IMAGE */
+.header-img-left {
+	width: 60px;
+	height: 60px;
+}
+#bell-icon i:hover {
+	color: red;
+	cursor: pointer;
+}
+/* START OF THE STYLING OF CONTENT OF THE PAGE */
+#content {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 110vh;
+	margin: 20px 20px 20px 20px;
+	overflow-y: auto;
+}
+#content::-webkit-scrollbar {
+	display: none;
+}
+/* THE CENTRAL PORTION CONSIST OF EVERY THING EXCEPT THE QUEUE */
+#central {
+	width: 65%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* align-items: center; */
+	/* align-items: center; */
+	margin-right: 20px;
+	position: relative;
+	/* height: 100vh; */
+	/* overflow-y: auto; */
+}
+
+/* DEFINE THE STYLING OF THE QUEUE PORTION */
+#queue {
+	width: 25%;
+	display: flex;
+	justify-content: flex-start;
+	flex-direction: column;
+}
+/* TOP CARD STYLING ALONG WITH ADJUSTMENT OF SIZE AND STYLE OF IMAGES */
+#top-cards {
+	display: flex;
+	/* flex-wrap: wrap; */
+	justify-content: center;
+}
+#top-cards img {
+	width: 95%;
+	cursor: pointer;
+}
+/* RESIZING THE IMAGE AFTER HOVERING OVER THEM */
+.img-resize {
+	transition: 0.4s ease-in-out;
+	width: 30%;
+}
+.img-resize img {
+	width: 100%;
+	height: 100%;
+}
+.img-resize:hover {
+	transform: scalex(1.4) scaley(1.1);
+	opacity: 1;
+	cursor: pointer;
+}
+
+/* STYLING FOR LATEST RELEASE SECTION */
+.Image-container {
+	display: flex;
+	justify-content: space-around;
+
+	width: 100%;
+	height: 90%;
+}
+.Inside-image {
+	width: 100%;
+	height: 100%;
+}
+.Inside-image img {
+	cursor: pointer;
+	width: 100%;
+	height: 100%;
+}
+.single-release {
+	width: 40%;
+	margin: 10px 10px 10px 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.Image-container img {
+	border: 3px solid white;
+	border-radius: 20px;
+}
+#All-releases {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.release-info {
+	margin-left: 15px;
+	margin-top: 0px;
+}
+.release-info p {
+	font-size: 0.8rem;
+	color: rgb(248, 244, 244);
+}
+/* ///////////////////////////////// */
+/* ARTISTS SECTION */
+/* #popular-artists {
+	max-width: 100%;
+} */
+.artist-image {
+	border-radius: 50%;
+	height: 120px;
+	width: 120px;
+	border: 3px solid white;
+	cursor: pointer;
+	transition: all 0.7s ease-in-out;
+	filter: brightness(50%);
+}
+.artist-image:hover {
+	filter: brightness(120%);
+}
+/* STYLING FOR SINGLE ARTIST IN THE SECTION */
+.individual-artist {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.artist-info {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.category-image img {
+	border-radius: 50%;
+	height: 110px;
+	width: 110px;
+	border: 3px solid white;
+	cursor: pointer;
+	filter: brightness(60%);
+	transition: all 0.7s ease-in-out;
+}
+.category-image:hover img {
+	filter: brightness(120%);
+}
+.category-options {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	background-color: rgb(16, 22, 66);
+	border-radius: 10px;
+	padding: 25px;
+}
+.category-info {
+	position: absolute;
+	text-align: center;
+	z-index: 50;
+}
+.category-image {
+	transition: all 0.7s ease-in-out;
+	margin: 10px 0px 0px 0px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+#hoverable-categories {
+	width: 100%;
+	/* height: 280px; */
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	/* margin: auto; */
+}
+.hoverable {
+	width: 30%;
+	overflow: hidden;
+	margin: 20px 20px;
+	border: solid 3px #bcece6;
+	border-radius: 10px;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 194px;
+}
+.hoverable img {
+	width: 100%;
+	height: 100%;
+	transition: transform 1s, filter 1s ease-in-out;
+	transform-origin: center center;
+	filter: brightness(50%);
+	cursor: pointer;
+}
+.hoverable:hover img {
+	filter: brightness(100%);
+	transform: scale(1.3);
+}
+.latest-track {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.track-info {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.track-info img {
+	height: 120px;
+	width: 110px;
+	border: 2px solid white;
+	border-radius: 20px;
+	cursor: pointer;
+	filter: brightness(65%);
+	transition: all 0.5s ease-in-out;
+}
+.track-info img:hover {
+	filter: brightness(130%);
+}
+
+/*  */
+/*  */
+/*  */
+/*  */
+/* STYLING FOR THE QUEUE SECTION OF THE PAGE */
+#queue-header {
+	display: flex;
+	width: 100%;
+	justify-content: space-around;
+}
+#Drop {
+	margin-top: 30px;
+	background-color: inherit;
+	border: none;
+	color: #50e3c2;
+	font-size: 1.1rem;
+	outline: none;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#queue-items {
+	height: 600px;
+	overflow-y: auto;
+	padding-right: 10px;
+	border: solid rgb(70, 62, 62) 4px;
+	border-radius: 10px;
+}
+/* TO HIDE THE VERTICLE SCROLLBAR */
+#queue-items::-webkit-scrollbar {
+	display: none;
+}
+
+/* STYLING FOR SINGLE QUEUE ITEM */
+.single-item {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	height: 80px;
+	margin-top: 10px;
+	background-color: rgb(16, 22, 40);
+	padding-left: 10px;
+	padding-top: 5px;
+	flex-wrap: wrap;
+}
+.item-left {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.item-image img {
+	width: 60px;
+	height: 60px;
+	border-radius: 3px;
+	cursor: pointer;
+	border: 10px;
+	box-shadow: 0px 0px 6px 4px bisque;
+}
+.song-No {
+	margin-right: 10px;
+}
+.item-details {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-left: 15px;
+	cursor: pointer;
+}
+.item-right {
+	display: flex;
+	align-items: center;
+	margin-right: 10px;
+}
+.queue-items {
+	position: relative;
+}
+.item-right i {
+	transition: box-shadow 0.3s;
+	cursor: pointer;
+}
+
+/* ADDING EFFETS ON ICONS WHEN WE HOVER OVER THEM */
+.item-right i:hover {
+	box-shadow: 0px 0px 6px 4px red;
+	color: red;
+}
+/* /////////////////////////////////////////////////// *
+/* ///////////////////////////////////////////////////////// */
+
+.dropbtn {
+	color: BLACK;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	position: relative;
+}
+
+/* .dropdown {
+	display: inline-block;
+	position: absolute;
+} */
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 150px;
+	overflow: auto;
+	border: solid 5px rgb(201, 179, 179);
+	border-radius: 5px;
+
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: black;
+	font-size: 0.8rem;
+	font-weight: 700;
+	font-family: Lato, Lucida Grande, Lucida Sans Unicode, Tahoma, Sans-Serif;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown-content a:hover {
+	background-color: rgb(0, 180, 180);
+}
+
+.show {
+	display: block;
+}

@@ -1,0 +1,160 @@
+#container {
+	height: 0px;
+	width: 0px;
+	overflow: hidden;
+	transition: all 1s ease-in-out;
+}
+#container:target {
+	position: sticky;
+	bottom: 0px;
+	left: 5%;
+	padding: 0px 0px;
+	height: 120px;
+	width: 90%;
+	background: #111;
+	border-radius: 40px;
+	box-shadow: 0 30px 20px -20px #000000;
+	box-sizing: border-box;
+}
+#container:target main {
+	padding: 5px 5px;
+	display: flex;
+	height: 100%;
+	justify-content: space-between;
+	clear: both;
+	box-sizing: border-box;
+}
+#container:target main .album-art {
+	float: left;
+}
+#container:target main .album-art img {
+	width: 90%;
+	border-radius: 50%;
+	box-sizing: border-box;
+}
+#container:target main .player {
+	position: relative;
+	float: right;
+	width: 8%;
+	height: 100%;
+	background: linear-gradient(0deg, #222222, #111111);
+	border-radius: 100%;
+	border: solid 2px #000;
+	box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.2),
+		0 4px 2px rgba(0, 0, 0, 0.2);
+}
+#container:target main .player .fa {
+	font-size: 100%;
+	position: absolute;
+	cursor: pointer;
+	color: black;
+	transition: all 0.3s ease-in-out;
+}
+#container:target main .player .fa:hover {
+	color: cyan;
+	text-shadow: 0 0 4px cyan;
+}
+#container:target main .player .fa.fa-play {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	height: 50%;
+	border: solid 2px #000;
+	box-shadow: inset 0 1px 2px rgba(255, 255, 255, 0.2),
+		0 0 8px rgba(0, 0, 0, 0.6);
+	border-radius: 100%;
+	line-height: 88px;
+	text-align: center;
+	background: linear-gradient(0deg, #111111, #222222);
+}
+#container:target main .player .fa.fa-repeat {
+	top: 7%;
+	left: 50%;
+	transform: translateX(-50%);
+	background: linear-gradient(0deg, #111111, #222222);
+}
+#container:target main .player .fa.fa-fast-backward {
+	top: 50%;
+	left: 6%;
+	transform: translateY(-50%);
+}
+#container:target main .player .fa.fa-fast-forward {
+	top: 50%;
+	left: 82%;
+	transform: translateY(-50%);
+}
+#container:target main .player .fa.fa-random {
+	top: 82%;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#container:target .album-art {
+	width: 10%;
+	height: 100%;
+	padding: 0px 0px;
+}
+#container:target footer {
+	clear: both;
+	padding: 2rem 2rem;
+	color: #999;
+	text-shadow: 2px 2px #111;
+	font-family: "Roboto", sans-serif;
+	box-sizing: border-box;
+	width: 80%;
+}
+#container:target footer .title {
+	text-align: center;
+	padding-bottom: 0.5rem;
+}
+#container:target footer .time-tracker {
+	border-top: solid 1px #000;
+	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+	padding-top: 0.5rem;
+	box-sizing: border-box;
+}
+#container:target footer .time-tracker .timer {
+	position: relative;
+	float: left;
+	width: 90%;
+	height: 2rem;
+	cursor: pointer;
+}
+#container:target footer .time-tracker .timer .bg {
+	position: relative;
+	top: 50%;
+	margin-right: 0.5rem;
+	transform: translateY(-50%);
+	height: 0.6rem;
+	border-top: solid 1px #000;
+	border-radius: 10px;
+	background: none;
+	box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.2);
+	overflow: hidden;
+	box-sizing: border-box;
+}
+#container:target footer .time-tracker .timer .bg:before {
+	content: "";
+	top: 50%;
+	transform: translateY(-50%);
+	position: absolute;
+	height: 0.2rem;
+	border-radius: 10px;
+	width: 50%;
+	background: cyan;
+	box-shadow: 0 0 2px 2px cyan;
+}
+#container:target footer .time-tracker .time {
+	float: left;
+	width: 10%;
+	line-height: 2rem;
+}
+#container:target .fa-play:before {
+	content: "\f04b";
+	position: absolute;
+	top: -29%;
+	left: 36%;
+	height: 0px;
+	background-color: linear-gradient(0deg, #111111, #222222);
+}
